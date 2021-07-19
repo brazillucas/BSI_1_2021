@@ -1,0 +1,535 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML E SEUS COMPLEMENTOS</title>
+  
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="{% static 'plugins/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- themify icon -->
+  <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
+  <!-- Slick Carousel -->
+  <link href="{% static 'plugins/slick/slick.css' %}" rel="stylesheet">
+  <!-- Slick Carousel Theme -->
+  <link href="{% static 'plugins/slick/slick-theme.css' %}" rel="stylesheet">
+  
+  <!-- CUSTOM CSS -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="shortcut  icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+
+</head>
+
+<body class="body-wrapper">
+
+
+<nav class="navbar main-nav fixed-top navbar-expand-lg large">
+  <div class="container">
+      <a class="navbar-brand" href="{% url 'index'%}"><img src="{% static 'images/logo.png' %}" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="ti-menu text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#html">HTML</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#css">CSS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#javascript">Java Script</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#fronteend">Frameworks Front-End</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#backend">Frameworks Backend</a>
+        </li>
+	  	<li class="nav-item">
+          <a class="nav-link scrollTo" href="#w3c">W3C</a>
+        </li>
+      </ul>
+      </div>
+  </div>
+</nav>
+<!--=====================================
+=            Homepage Banner            =
+======================================-->
+
+<section class="banner bg-1" id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 align-self-center">
+				<!-- Contents -->
+				<div class="content-block">
+					<h1>HTML e seus complementos</h1>
+					<h5>Conheça um pouco sobre HTML, CSS, JS e Frameworks (Backend e Frontend) no seu guia rápido de consulta sobre as principais tecnologias de desenvolvimento Web.</h5>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<!-- App Image -->
+				<div class="image-block">
+					<img class="img-fluid phone-thumb" src="{% static 'images/home/logo_html.png' %}" alt="Logo-HTML">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Homepage Banner  ====-->
+
+<!--===========================
+=            HTML             =
+============================-->
+
+<section class="about section bg-2" id="html">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 align-self-center text-center">
+				<!-- Image Content -->
+				<h1>HTML</h1>
+				<h5>Uma breve introdução ao HTML, a Linguagem de Marcação de Hipertextos</h5>
+			</div>
+			<div class="col-lg-12 col-md-10 m-md-auto align-self-center ml-auto">
+				<div class="about-block">
+					<!-- About 01 -->
+					<div class="about-item">
+						
+						<div class="content">
+							<h5>Tutoriais para iniciantes</h5>
+							<p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
+		
+							<p>"Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.</p>
+
+							<p>O HTML usa "Marcação" para anotar texto, imagem e outros conteúdos para exibição em um navegador da Web. A marcação HTML inclui "elementos" especiais, como <code>&lt;head&gt;</code>,<code>&lt;title&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;canvas&gt;</code>, <code>&lt;datalist&gt;</code>, <code>&lt;details&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;output&gt;</code>, <code>&lt;progress&gt;</code>, <code>&*lt;video&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> e muitos outros.</p>
+
+							<p>Um elemento HTML é separado de outro texto em um documento por "tags", que consistem no nome do elemento entre "<" e ">". O nome de um elemento dentro de uma tag é insensível a maiúsculas e minúsculas. Isto é, pode ser escrito em maiúsculas, minúsculas ou um mistura. Por exemplo, a tag <code>&lt;title&gt;</code> pode ser escrita como <code>&lt;Title&gt;</code>, <code>&lt;TITLE&gt;</code> ou de qualquer outra forma.</p>
+
+							<p>Os artigos abaixo podem ajudá-lo a aprender mais sobre HTML.</p>
+
+							<p>Introdução ao HTML<br>
+							Se você é novo no desenvolvimento web, não deixe de ler nosso artigo <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML" target="_blank">O Básico do HTML</a> para aprender o que é HTML e como usá-lo.</p>
+
+							<p>Tutoriais HTML<br>
+							Para artigos sobre como usar o HTML, assim como tutoriais e exemplos completos, confira nossa <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML" target="_blank">Área de Aprendizado de HTML</a>.</p>
+							
+							<br>
+							
+							<a class="btn btn-outline-primary btn-sm" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" role="button">Saiba mais</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of HTML   ====-->
+
+<!--==============================
+=              CSS               =
+===============================-->
+
+<section class="about section feature" id="css">
+	<div class="container">
+		<div class="row">
+				<div class="col-12">
+					<div class="section-title">
+						<h2>CSS</h2>
+						<p>O responsável pela personalização do seu site</p>
+					</div>
+				</div>
+			<div class="col-lg-12 col-md-10 m-md-auto align-self-center ml-auto">
+				<div class="about-block">
+					<!-- About 02 -->
+					<div class="about-item active">
+						<div class="content">
+							<h5>Tutoriais</h5>
+							<p>CSS (Cascading Style Sheets ou Folhas de Estilo em Cascata) é uma linguagem de estilo (en-US) usada para descrever a apresentação de um documento escrito em HTML ou em XML (incluindo várias linguagens em XML como SVG, MathML ou XHTML). O CSS descreve como elementos são mostrados na tela, no papel, na fala ou em outras mídias.</p>
+							
+							<br>
+
+							<p>CSS é uma das principais linguagens da open web e é padronizada em navagadores web de acordo com as especificação da W3C. Desenvolvido em níveis, o CSS1 está atualmente obsoleto, o CSS2.1 é uma recomendação e o CSS3, agora dividido em pequenos módulos, está progredindo para a sua padronização.</p>
+
+							<br>
+							<p>Introdução CSS</p><br>
+							<p>Se você é novo no desenvolvimento web, certifique-se de ler nosso artigo <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/CSS_basics" target="_blank" style=" color: black">CSS básico</a> para aprender o que é CSS e como usá-lo.</p>
+
+							<p>Tutoriais CSS</p>
+							<p>Nossa <a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS" target="_blank" style=" color: black">área de aprendizado CSS </a>contém diversos tutoriais para levá-lo do nível iniciante ao avançado, cobrindo todos os fundamentos.</p>
+
+							<br>
+							<p>Nossa <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference" target="_blank" style=" color: black">extensa referência CSS</a> para desenvolvedores web experientes descreve todas as propriedades e conceitos do CSS.</p>
+
+							<p>Nossa área de aprendizado CSS contempla múltiplos módulos que ensinam CSS desde o início — não é necessário conhecimento prévio.</p><br>
+
+							<p><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/First_steps" target="_blank" style=" color: black">Introdução ao CSS</a></b></p>
+
+							<br>
+							<p>Esse módulo inicia com o funcionamento básico do CSS, incluindo seletores e propriedades, escrever regras CSS, aplicar CSS ao HTML, como especificar comprimento, cor, e outras unidades em CSS, cascata e herança, o básico do modelo de caixas, e depuração de CSS.</p>
+
+							<br>
+							<p><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Styling_text" target="_blank" style=" color: black">Estilização do texto</a></b></p>
+
+							<br>
+							<p>Esse módulo discute os fundamentos da estilização de textos, incluindo a definição de fontes, negritos, itálicos, linhas e espaçamentos de letras, sombras e outras propriedades de textos.</p>
+
+							<br>
+							<p><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/Building_blocks" target="_blank" style=" color: black">Estilização de caixas</a></b></p>
+
+							<br>
+							<p>Esse módulo foca na estilização de caixas, um dos passos fundamentais para o layout de uma página web. Nesse módulo nós recapitulamos o modelo de caixas, então abordamos o controle do layout das caixas definindo margens, bordas e preenchimento, cores de fundo customizadas, imagens e outras características extravagantes como sombras e filtros em caixas.</p>
+
+							<br>
+							<p><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout" target="_blank" style=" color: black">Layout CSS</a></b></p>
+
+							<br>
+							<p>Neste ponto nós já vimos os fundamentos do CSS, como estilizar texto e estilizar e manipular caixas que contém seu conteúdo. Agora veremos como posicionar suas caixas no lugar certo em relação à janela de exibição e um ao outro. Nós cobrimos os pré-requisitos necessários e agora você pode se aprofundar no layout do CSS com diferentes configurações de exibição, métodos tradicionais de layout envolvendo float e posicionamento, e modernas ferramentas para layout como flexbox.</p>
+
+							<hr class="my-4">
+
+							<h3>Livro de receitas</h3>
+							<p>O <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Layout_cookbook" target="_blank" style=" color: black">livro de receitas de layout CSS</a> tem como objetivo juntar receitas para padrões comuns de layout, coisas que você pode precisar para implementar em seus sites. Além de prover código você pode usá-lo como ponto de partida em seus projetos, essas receitas destacam as diferentes formas de utilização das especificações de layout e as escolhas que você pode fazer como desenvolvedor.</p>
+
+							<br>
+					
+							<a class="btn btn-outline-primary btn-sm" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript#:~:text=linguagem%20de%20programa%C3%A7%C3%A3o.-,Intermedi%C3%A1rio,-Uma%20re-introdu%C3%A7%C3%A3o" target="_blank" role="button" style="color: white">Saiba mais</a>
+						</div>
+					</div>	
+			</div>
+		</div>
+	</div>
+		
+</section>
+
+<!--====    End of CSS     ====-->
+
+<!--=================================
+=            Java Script            =
+==================================-->
+
+<section class="section promo-video bg-3 overlay" id="javascript">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title">
+					<h2>Java Script</h2>
+					<p>A linguagem de programação mais utilizada na WEB</p>
+				</div>
+				
+				<div class="col-12 bg-2">
+						<!-- About 03 -->
+						<div class="about section about-item ">
+
+							<div class="content">								
+								<style>
+									dl dd {
+										margin: 0 24px 24px;
+									}
+								</style>
+								
+								<dl>
+									<h2>Tutoriais</h2>
+									<dd>JavaScript® (às vezes abreviado para JS) é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros ambientes sem browser, tais como node.js,  Apache CouchDB e Adobe Acrobat. O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos (como por exemplo a programação funcional). Saiba mais sobre o JavaScript.</dd>
+
+									<dd>Essa seção do site é dedicada à linguagem JavaScript e não às partes que são específicas para páginas Web e outros ambientes. Para mais informações sobre as APIs específicas para páginas Web, por favor consulte as seções Web APIs e DOM.</dd>
+
+									<dd>O padrão JavaScript é ECMAScript. Desde 2012, todos os navegadores modernos possuem suporte total ao ECMAScript 5.1. Navegadores mais antigos suportam pelo menos ECMAScript 3. Em 17 de Junho de 2015, a ECMA International publicou a sexta versão do ECMAScript, que é oficialmente chamado de ECMAScript 2015, e foi inicialmente conhecido como ECMAScript 6 ou ES6. Desde então, as especificações do ECMAScript são lançadas anualmente. Essa documentação faz referência à última versão de referência, que atualmente é a ECMAScript 2018.</dd>
+
+									<dd>Não se deve confundir o JavaScript com a linguagem de programação Java. Tanto Java quanto JavaScript são marcas registradas da Oracle nos Estados Unidos da América e em outros países. No entanto, as duas linguagens de programação possuem sintaxe, semânticas e usos muito diferentes.</dd>
+
+									<dd>Aprenda a programar em JavaScript com guias e tutoriais.</dd>
+
+									<hr class="my-4">
+
+									<h2>Para iniciantes</h2>
+
+									<dd>Vá para a <a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript" target="_blank">Área de aprendizado de JavaScript</a> se você quer aprender JavaScript mas não tem experiência prévia com JavaScript ou programação. Os módulos completos que estão disponíveis lá são os seguintes:</dd>					
+
+								
+									<dt><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps" target="_blank">Primeiros passos em JavaScript</a></b></dt>
+
+
+									<dd>Respostas para algumas perguntas básicas como <em>O que é JavaScript?</em>, <em>Com o que se parece?</em> e O que se pode fazer?, bem como funcionalidades importantes do JavaScript, tais como variáveis, strings, números e vetores.</dd>
+
+									<dt><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks" target="_blank">Elementos básicos do JavaScript</a></b></dt>
+
+
+									<dd>Continuamos nossa cobertura das funcionalidades fundamentais do JavaScript, direcionando nossa atenção para tipos de blocos de código encontrados comumente, como expressões condicionais, laços, funções e eventos.</dd>
+
+									<dt><b><a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects" target="_blank">Introduzindo objetos em JavaScript</a></b></dt>
+
+
+									<dd>O entendimento da natureza da orientação à objetos do JavaScript é importante se você quiser levar o seu conhecimento da linguagem para o próximo nível e escrever códigos mais eficientes, por isso oferecemos esse módulo para te ajudar.</dd>
+
+								</dl>
+
+								<h3>Guia do JavaScript</h3>
+
+								<dl>
+									<dt><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide" target="_blank">Guia do JavaScript</a></dt>	
+										<dd>Um guia muito mais detalhado sobre a linguagem JavaScript, para pessoas que possuem experiência prévia com JavaScript ou outra linguagem de programação.</dd>
+								</dl>
+
+							   <a class="btn btn-outline-primary btn-sm" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript#:~:text=linguagem%20de%20programa%C3%A7%C3%A3o.-,Intermedi%C3%A1rio,-Uma%20re-introdu%C3%A7%C3%A3o" target="_blank" role="button">Saiba mais</a>
+							</div>
+						</div>				
+					</div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of Java Script  ====-->
+
+<!--===================================
+=         Framework Frontend          =
+====================================-->
+
+<section class="pricing section bg-shape" id="fronteend">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title mb-4">
+					<h2 class="mb-3">Frameworks Frontend</h2>
+					<p>Fonte: <a href="https://blog.dankicode.com/" target="_blank">Blog Danki Code</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<p>Hoje em dia a grande parte dos desenvolvedores já usufruem das vantagens dos Frameworks Front-End, principalmente quem trabalha com um número grande de projetos.</p><br>
+
+			<p>E com toda a certeza, a facilidade de reutilizar códigos com poucas modificações ajuda muito a pouparmos tempo, além de dar ao desenvolvedor uma caixa de ferramentas que supera o que é fornecido pela linguagem em si.</p><br>
+
+			<p>Em muitos casos inclusive o conceito de Framework parece muito confuso, quando comparado com outras formas de se aproveitar o código em vários projetos, como as classes e orientações a objetos por exemplo.</p><br>
+
+			<p>A grande diferença dos Frameworks é sua forma de operar, que é bem mais profunda, porém, com vantagens e desvantagens.</p><br>
+
+			<p>E é justamente por isso que vamos lhe explicar detalhadamente o que é um Framework e lhe trazer nessa primeira parte 12 opções com os melhores Frameworks Front-End (HTML, CSS e JavaScript)</p><br>
+
+			<p>O que iremos aprender nesse artigo?</p>
+
+			<style>
+				dl dd {
+					margin: 0 24px 24px;
+				}
+			</style>
+
+			<dl class="col-12">
+				<dt>// <a href="https://blog.dankicode.com/frameworks-front-end-parte-1/#o-que-e-um-framework" target="_blank">O que é um Framework.</a>
+				<dt>// <a href="https://blog.dankicode.com/frameworks-front-end-parte-1/#como-um-framework-funciona" target="_blank">Como um Framework Funciona.</a></dt>
+				<dt>//<a href="https://blog.dankicode.com/frameworks-front-end-parte-1/#para-que-serve-um-framework"> Para que serve um Framework?</a></b></dt>
+
+				<br>
+				<dt>// Frameworks HTML</dt><br>
+
+				<dd>// 1. Foundation</dd>
+				<dd>// 2. Sencha Ext JS</dd>
+				<dd>// 3. Monaca</dd>
+				<dd>// 4. Montage</dd>
+
+				<dt>// Frameworks CSS</dt><br>
+
+				<dd>// 5. Materialize</dd>
+				<dd>// 6. BootStrap</dd>
+				<dd>// 7. Pure</dd>
+				<dd>// 8. Susy</dd>
+
+				<dt>// Frameworks JavaScript</dt><br>
+
+				<dd>// 9. Angular.js</dd>
+				<dd>// 10. React.js</dd>
+				<dd>// 11. Vue.js</dd>
+				<dd>// 12. Meteor.js</dldd>
+
+			</dl>
+
+
+			<a class="btn btn-outline-primary btn-sm" href="https://blog.dankicode.com/frameworks-front-end-parte-1/" target="_blank" role="button">Saiba mais</a>
+		</div>
+	</div>
+</section>
+
+<!--====End of Framework Frontend====-->
+
+<!--=============================================
+=               Framework Backend               =
+==============================================-->
+
+<section class="cta-download bg-3 overlay" id="backend">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-7">
+				<div class="content-block">
+					<!-- Title -->
+					<h2>Frameworks Backend</h2>
+					<!-- Desctcription -->
+					<h2>O que é back-end?</h2>
+					<!-- Conteúdo -->
+					<p>Operações feitas através de um computador, desde as mais simples até as mais complexas, precisam de um direcionamento, determinando como essas funções se comportarão. Dessa maneira, criar essas instruções, testá-las e mantê-las ativas são tarefas realizadas por um programador back-end.</p>
+
+					<p>Conversar com alguém por meio de mensagens, baixar um conteúdo ou postar uma foto: seja o que for, o desenvolvimento back-end está sempre ali. Se você quer saber mais sobre essa parte da programação, continue acompanhando o artigo que preparamos e saiba mais!</p>
+
+					<h3>O que é back-end?</h3>
+					<p>Essa forma de desenvolvimento se relaciona com o que está por trás das aplicações desenvolvidas na programação. Ou seja, tudo que dá estrutura e apoio às ações do usuário da máquina é chamado de back-end.</p>
+
+					<p>Quando acessamos um site, por exemplo, por trás de toda sua apresentação amigável esteticamente, há uma comunicação das informações trocadas entre banco de dados e navegador. Portanto, por trás da interface gráfica do realizador, o back-end está sempre agindo.</p>
+
+					<h3>Diferenças entre back-end e front-end</h3>
+					<p>Enquanto os desenvolvimentos de front-end estão relacionados à área visual de aplicações, como design, forma da disposição de seções de texto e imagens, apresentação, linguagens HTML, CSS, cores e outros pontos; o desenvolvimento de back-end é tudo aquilo que possibilita o funcionamento.</p>
+
+					<p>Sendo assim, front-end e back-end estão bastante ligados, porém o segundo é voltado aos bancos de dados e servidores; responsável por atualizações, mudanças, segurança, gerenciamento de conteúdo, estrutura, etc. Se tomarmos o exemplo das redes sociais, seu funcionamento só é possível com um banco de dados que contenha informações como nome, data de nascimento, foto de perfil, e por aí vai.</p>
+
+				   <a class="btn btn-outline-primary btn-sm" href="https://www.totvs.com/blog/developers/back-end/" target="_blank" role="button" style=" color: white">Saiba mais</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====     End of Framework Backend      ====-->
+
+
+
+<!--==========================
+=            W3C            =
+===========================-->
+
+<section class="section team bg-shape-two" id="w3c">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="section-title mb-4">
+					<h2 class="mb-3">W3C</h2>
+					<p>O consórcio que mantém a internet organiza e padronizada. Conheça um pouco mais sobre o W3C</p>
+				</div>
+			
+			<!-- Conteúdo -->
+			<h2>W3C</h2>
+			<p>Origem: Wikipédia, a enciclopédia livre.</p><br>
+
+			<p>O World Wide Web Consortium (W3C) é a principal organização de padronização da World Wide Web. Consiste em um consórcio internacional com 450 membros, agrega empresas, órgãos governamentais e organizações independentes com a finalidade de estabelecer padrões para a criação e a interpretação de conteúdos para a Web.</p><br>
+
+			<p>Foi fundado por Tim Berners-Lee em 1994 para levar a Web ao seu potencial máximo, por meio do desenvolvimento de protocolos comuns e fóruns abertos que promovam a sua evolução e assegurem a sua interoperabilidade. Sites desenvolvidos segundo esses padrões podem ser acessados e visualizados por qualquer pessoa ou tecnologia, independente dos hardware ou software utilizados, como celulares (em Portugal, telemóveis) e PDAs, de maneira rápida e compatível com os novos padrões e tecnologias que possam surgir com a evolução da internet.</p><br>
+
+			<h2>Organização</h2>
+			<p>Para alcançar seus objetivos, o W3C possui diversos comitês que estudam as tecnologias existentes para a apresentação de conteúdo na Internet e criam padrões de recomendação para utilizar essas tecnologias. Com a padronização, os programas conseguem acessar facilmente os códigos e entender onde deve ser aplicado cada conhecimento expresso no documento.</p><br>
+
+			<p><b>Escritório no Brasil</b></p>
+			<p>O escritório Brasil da W3C iniciou suas operações em 1 de novembro de 2007.</p><br>
+
+			<h3>Formatos recomendados</h3><br>
+
+			<p>Os formatos comuns aprovados pela W3C são: SVG (desenho vetorial), PNG, HTML, XHTML, XML etc. O PNG usa RGBA, ou seja: Vermelho, Verde, Azul e Alpha, e não tem perda de qualidade como o JPG, que usa RGB e não suporta transparência.</p>
+
+			<p>Padrões seus como HTML, XHTML e CSS são muito populares, contudo, em muitos casos são usados de forma errônea devido ao desconhecimento da especificação.</p><br>
+
+			<h3>Padrões W3C</h3>
+
+			<ul>
+				<li>Cascading Style Sheets (CSS)</li>
+				<li>Common Gateway Interface</li>
+				<li>Document Object Model (DOM)</li>
+				<li>Resource Description Framework</li>
+				<li>Scalable Vector Graphics (SVG)</li>
+				<li>SKOS</li>
+				<li>Simple Object Access Protocol</li>
+				<li>Synchronized Multimedia Integration Language</li>
+				<li>Web Services Description Language</li>
+				<li>eXtensible Hypertext Markup Language (XHTML)</li>
+				<li>eXtensible Markup Language (XML)</li>
+				<li>XML Information Set</li>
+				<li>XPath</li>
+				<li>XQuery</li>
+				<li>eXtensible Stylesheet Language for Transformation (XSLT)</li>
+				<li>Web Ontology Language (OWL)</li>
+			</ul>
+		   <a class="btn btn-outline-primary btn-sm" href="https://www.w3c.br/" target="_blank" role="button">Saiba mais</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--====  End of W3C  ====-->
+
+<!--============================
+=            Footer            =
+=============================-->
+
+<footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mr-auto">
+        <div class="footer-logo">
+          <img src="{% static 'images/logo.png' %}" alt="footer-logo">
+        </div>
+        <div class="copyright">
+          <p>@2019 Themefisher All Rights Reserved | Design and Developed By : <a href="https://themefisher.com/"
+              target="_blank">Themefisher</a>
+           <br>
+					 Distributed by : <a href="https://themewagon.com/"
+					 target="_blank">Themewagon</a> | Template: <a href="https://themewagon.com/themes/free-responsive-bootstrap-4-html-5-landing-page-website-template-lifetrakr/" target="_blank">lifetrakr</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 text-lg-right">
+        <!-- Social Icons -->
+        <ul class="social-icons list-inline">
+          <li class="list-inline-item">
+            <a target="_blank" href="https://facebook.com/lucas.cardoso64"><i class="text-primary ti-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://github.com/brazillucas"><i class="text-primary ti-linkedin"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a target="_blank" href="https://instagram.com/ldroid43"><i class="text-primary ti-instagram"></i></a>
+          </li>
+        </ul>
+        
+        <!-- Footer Links -->
+        <ul class="footer-links list-inline">
+          <li class="list-inline-item">
+            <a class="scrollTo" href="#">Home</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="scrollTo" href="#html">HTML</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="scrollTo" href="#css">CSS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- JAVASCRIPTS -->
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA" async defer></script>
+
+  <script src="{% static 'plugins/jquery/jquery.js' %}"></script>
+  <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
+  
+</body>
+
+</html>
